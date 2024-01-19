@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  web-ui:
+    build:
+      context: ./web-ui
+    ports:
+      - 8090:80
+  product-api:
+    build:
+      context: ./product-api
+    ports:
+      - 8080:8080
